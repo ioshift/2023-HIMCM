@@ -1,0 +1,71 @@
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{amsthm}
+\usepackage[sorting=none]{biblatex}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{siunitx}
+\usepackage{mathabx}
+\usepackage[inkscapelatex=false]{svg}
+\usepackage{footnote}
+\usepackage{tablefootnote}
+\usepackage{makecell}
+\usepackage[letterpaper, left=2cm,right=2cm,top=3cm,bottom=2cm]{geometry}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{verbatim}
+\usepackage{minted}
+\usepackage{booktabs}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage[toc,page]{appendix}
+\usepackage[version=4]{mhchem}
+\usepackage{setspace}
+\usepackage{placeins}
+\usepackage[]{pdfpages}
+\usepackage{wrapfig}
+
+\renewcommand{\maketitle}{
+    \begin{center}{
+        
+    {\fontsize{10pt}{14pt}\selectfont Team Control Number}\\[0.5em]
+    
+    {\fontsize{24pt}{14pt}\selectfont \textcolor{red}{\textbf{13879}}}\\[0.4em]
+    
+    {\fontsize{10pt}{14pt}\selectfont Problem Chosen}\\[0.5em]
+    
+    {\fontsize{24pt}{14pt}\selectfont \textcolor{red}{\textbf{A}}}\\[0.5em]
+
+    {\fontsize{14pt}{14pt}\selectfont \textbf{2023}}\\[-0.2em]
+
+    {\fontsize{10pt}{14pt}\selectfont \textbf{HiMCM}}\\[-0.2em]
+
+    {\fontsize{10pt}{14pt}\selectfont \textbf{Summary Sheet}}\\[4em]
+    
+    }\end{center}
+    \hrule
+    \normalsize
+}
+% new command
+\renewenvironment{abstract}{\maketitle}{\newpage\setlength{\parskip}{0em}\tableofcontents\setlength{\parskip}{0.5em}\newpage}
+% format
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Page \thepage\ of \pageref*{LastPage}}
+\lhead{Team \#13879}
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1em}
+
+% citation
+\addbibresource{citation.bib}
+\hypersetup{
+  colorlinks=true,
+  urlcolor=blue,
+  linkcolor=red,
+  citecolor=red
+}
